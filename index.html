@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<HTML lan='en'>
+  <head>
+    <meta charset = 'utf-8'>
+    <title>Sofi's Survey Form</title>
+    <link ref ="stylesheet" href="styles.css" />
+  </head><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sofi's Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">GAME OF THRONES' SURVEY FORM</h1>
+  <p id="description">Hello, people of Westeros</p>
+  <form method="post" action="https://register-demo.freecodecamp.org" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">What's your name? <input id="name" type="text" name="name" placeholder="Please enter your name here" required></label>
+      <label for="email" id="email-label">What's your email? <input id="email" type="email" name="email" placeholder="Please enter your email here" required></label>
+      <label for="number" id="number-label">Enter your cellphone: <input id="number" type="number" name="number" placeholder="Please enter your cellphone here"></label>
+    </fieldset>
+    <fieldset>
+      <h2>Would you recommend Game of Thrones to a friend?</h2>
+      <label for="reccomendation-yes">Yes, I would <input id="reccomendation-yes" name="reccomendation" type="radio" value="yes"></label>
+      <label for="reccomendation-no">No, I wouldn't <input id="reccomendation-no" name="reccomendation" type="radio" value="no"></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">What's the best season?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="1">Season 1</option>
+        <option value="2">Season 2</option>
+        <option value="3">Season 3</option>
+        <option value="4">Season 4</option>
+        <option value="5">Season 5</option>
+        <option value="6">Season 6</option>
+        <option value="7">Season 7</option>
+        <option value="8">Season 8</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <h2>Select your favorite character(s)</h2>   
+      <label for="john-snow">John Snow <input type="checkbox" id="john-snow" name="characters" value="John Snow" class="inline"></label>
+      <label for="tyrion-lannister">Tyrion Lannister <input type="checkbox" id="tyrion-lannister" name="characters" value="Tyrion Lannister" class="inline"></label>
+ <label for="ned-stark">Eddard "Ned" Stark <input type="checkbox" id="ned-stark" name="characters" value="Eddard 'Ned' Stark" class="inline"></label>
+      <label for="jaime-lannister">Jaime Lannister <input type="checkbox" id="jaime-lannister" name="characters" value="Jaime Lannister" class="inline"></label>
+ <label for="brienne-tarth">Brienne of Tarth <input type="checkbox" id="brienne-tarth" name="characters" value="Brienne of Tarth" class="inline"></label>
+<label for="bran-stark">Bran Stark <input type="checkbox" id="bran-stark" name="characters" value="Bran Stark" class="inline"></label>
+<label for="arya-stark">Arya Stark <input type="checkbox" id="arya-stark" name="characters" value="Arya Stark" class="inline"></label>
+<label for="daenerys-targaryen">Daenerys Targaryen <input type="checkbox" id="daenerys-targaryen" name="characters" value="Daenerys Targaryen" class="inline"></label>
+    </fieldset>
+    <fieldset>
+      <p>Leave a nice comment <br>(or take the chance to complain about the ending)</p>
+      <textarea class="comment" rows="4" cols="50" placeholder="Leave your comment here"></textarea>
+    </fieldset>
+    <p>Fly, Crow!</p>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
