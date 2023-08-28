@@ -2,9 +2,13 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-color: #1b1b32;
+  background-color: rgba(0, 0, 0, 0, 0.7); /* Fondo semi opaco */
+  background-image: url('https://i0.wp.com/newspack-elsol.s3.amazonaws.com/wp-content/uploads/2019/04/1554410270652got.jpg?fit=989%2C717&ssl=1'); /* Ruta de tu imagen de fondo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #f5f6f7;
-  font-family: Tahoma;
+  font-family: Tahoma, sans-serif;
   font-size: 16px;
 }
 
@@ -24,56 +28,6 @@ h1 {
 h2 {
   font-size: 28px;
   margin: 0;
-}
-
-form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding-bottom: 2em;
-}
-
-fieldset {
-  border: none;
-  padding: 1rem 0;
-  border-bottom: 3px solid #3b3b4f;
-}
-
-fieldset:last-of-type {
-  border-bottom: none;
-}
-
-label {
-  display: inline-block;
-  margin: 0.5rem 1rem; /* Ajusta el margen aquí para controlar la separación */
-  font-size: 18px;
-  text-align: left;
-  vertical-align:middlbody {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  background-color: #1b1b32;
-  color: #f5f6f7;
-  font-family: Tahoma;
-  font-size: 16px;
-}
-
-h1, p {
-  margin: 1em auto;
-  text-align: center;
-}
-
-p {
-  font-size: 20px;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 28px;
 }
 
 form {
@@ -122,14 +76,15 @@ input[type="textarea"] {
 }
 
 input[type="radio"] {
-  height: 1;
-  margin: 0rem 0rem rem;
+  height: 0.5rem;
+  margin: 0.1rem 0rem 0.5rem;
 }
 
 .inline {
   width: unset;
-  margin: 0.5rem 0 0 1rem;
-  vertical-align: middle;
+  margin: 0.5rem;
+  display: inline-block;
+  vertical-align: top;
   text-align: left;
 }
 
@@ -142,11 +97,11 @@ input[type="submit"] {
   background-color: #3b3b4f;
   border-color: white;
   min-width: 300px;
+  cursor: pointer;
 }
-.inline {
-  width: unset;
-  margin: 0.5rem;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
+.content {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi opaco */
+  padding: 2em;
 }
